@@ -9,6 +9,7 @@ const oneRowDown = () => {
     for (let j = 5; j < 9; j++) {
       ground.playboard[i][j] = ground.playboard[i - 1][j];
     }
+    ground.playboard[i][4] = ground.playboard[i - 1][4];
   }
 };
 
