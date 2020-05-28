@@ -1,11 +1,11 @@
 // milyen színeket használhatok - witch color can be used
 const chases = [
-  'Piros',
-  'Kék',
-  'Zöld',
-  'Sárga',
-  'Barna',
-  'Narancssárga'
+  '1 - Piros',
+  '2 - Kék',
+  '3 - Zöld',
+  '4 - Sárga',
+  '5 - Barna',
+  '6 - Pink'
 ];
 
 // const map = (width, height) => {
