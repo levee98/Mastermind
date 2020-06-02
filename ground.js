@@ -1,12 +1,12 @@
 // milyen színeket használhatok - witch color can be used
-const chases = [
-  '1 - Piros',
-  '2 - Kék',
-  '3 - Zöld',
-  '4 - Sárga',
-  '5 - Barna',
-  '6 - Pink'
-];
+// const chases = [
+//   '1 - Red',
+//   '2 - Blue',
+//   '3 - Green',
+//   '4 - Yellow',
+//   '5 - Brown',
+//   '6 - Pink'
+// ];
 
 // const map = (width, height) => {
 //   const playboard = new Array(height);
@@ -83,7 +83,7 @@ const config = {
 };
 
 module.exports = {
-  chases,
+//  chases,
   playboard,
   config
 };
