@@ -17,20 +17,21 @@ const playBoard = (xMiddle) => {
   const rigthMiddle = ((xMiddle + 27) + xMiddle * 2) / 2;
   axel.bg(0, 0, 0);
   axel.box(xMiddle + 27, 1, (xMiddle * 2) - (xMiddle + 26), 40); // box on the rigth side for the banner
-  axel.box(1, 1, xMiddle - 29, 40); // box on the left for the instructions
+  axel.box(1, 1, xMiddle - 28, 40); // box on the left for the instructions
   axel.fg(255, 255, 255);
-  axel.text(rigthMiddle - 17, 11, '                    _');
-  axel.text(rigthMiddle - 17, 12, '    /\\/\\   __ _ ___| |_ ___ _ __');
-  axel.text(rigthMiddle - 17, 13, '   /    \\ / _` / __| __/ _ \\ \'__|');
-  axel.text(rigthMiddle - 17, 14, '  / /\\/\\ \\ (_| \\__ \\ ||  __/ |');
-  axel.text(rigthMiddle - 17, 15, '  \\/    \\/\\__,_|___/\\__\\___|_|');
+  axel.text(rigthMiddle - 17, 13, '                    _');
+  axel.text(rigthMiddle - 17, 14, '    /\\/\\   __ _ ___| |_ ___ _ __');
+  axel.text(rigthMiddle - 17, 15, '   /    \\ / _` / __| __/ _ \\ \'__|');
+  axel.text(rigthMiddle - 17, 16, '  / /\\/\\ \\ (_| \\__ \\ ||  __/ |');
+  axel.text(rigthMiddle - 17, 17, '  \\/    \\/\\__,_|___/\\__\\___|_|');
 
-  axel.text(rigthMiddle - 17, 19, '             _           _');
-  axel.text(rigthMiddle - 17, 20, '       /\\/\\ (_)_ __   __| |');
-  axel.text(rigthMiddle - 17, 21, '      /    \\| | \'_ \\ / _` |');
-  axel.text(rigthMiddle - 17, 22, '     / /\\/\\ \\ | | | | (_| |');
-  axel.text(rigthMiddle - 17, 23, '     \\/    \\/_|_| |_|\\__,_|');
+  axel.text(rigthMiddle - 17, 20, '             _           _');
+  axel.text(rigthMiddle - 17, 21, '       /\\/\\ (_)_ __   __| |');
+  axel.text(rigthMiddle - 17, 22, '      /    \\| | \'_ \\ / _` |');
+  axel.text(rigthMiddle - 17, 23, '     / /\\/\\ \\ | | | | (_| |');
+  axel.text(rigthMiddle - 17, 24, '     \\/    \\/_|_| |_|\\__,_|');
   axel.text(rigthMiddle - 8, 33, 'Coded by Levente');
+  axel.fg(0, 0, 0);
 };
 
 module.exports = {

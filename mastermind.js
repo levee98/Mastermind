@@ -1,5 +1,4 @@
 const inputGuess = require('./inputGuess');
-// const readline = require('readline-sync');
 const fillMap = require('./fillMap');
 const fillAnswer = require('./fillAnswer');
 const generateCode = require('./generateCode');
@@ -23,20 +22,17 @@ let rowForPrint = 0;
 const xMiddle = process.stdout.columns / 2;
 fillMap.fillMap();
 fillAnswer.fillAnswer();
-let live = 2;
+let live = 11;
 const genCo = generateCode.generateCode();
-console.clear();
-axel.text(0, 0, '');
-// const play = table.table(ground.playboard, ground.config);
-// console.table(play);
-// console.log(genCo); // printing out generated code - befor ending shoud be commented!
-
-// save in separate file as starting printOuts!
+const genCoPrint = genCo.toString();
 playboard.playBoard(xMiddle);
 instruct.instruct(live, xMiddle);
+axel.text(0, 0, '');
+axel.bg(100, 100, 100);
+axel.fg(255, 255, 255);
+axel.text(1, 1, genCoPrint);
 
 while (true) {
-  console.log(genCo);
   const inputedCode = inputGuess.guessedCode(howManyDigits, xMiddle);
   const answBlack = rigthNumPlace.proof(genCo, inputedCode);
   const answWhite = proofInclude.proofWhite(genCo, inputedCode);
@@ -44,8 +40,6 @@ while (true) {
   fillProofAnswer.fillProofedAnswer(answBlack, answWhite, live);
   printTable.printTable(inputedCode, rowForPrint, xMiddle);
   rowForPrint++;
-  //  const play = table.table(ground.playboard, ground.config);
-  //  console.log(play);
   oneRowDown.oneRowDown();
   if (answBlack === 4) { // You Win!
     gameOver.win(genCo, xMiddle);
