@@ -30,14 +30,15 @@ const instruct = (live, xMiddle) => {
   axel.bg(48, 10, 36);
   axel.bg(200, 0, 200);
   axel.box(leftMiddle - 17, 21, 35, 11); // box on the left for the instructions
+  const liveString = live.toString();
   axel.text(leftMiddle - 11, 22, '                       ');
   axel.text(leftMiddle - 10, 22, ' Number of live(s): ');
+  axel.fg(0, 0, 0);
+  axel.text(leftMiddle + 12, 22, liveString); // console.log(live);
   axel.text(leftMiddle - 11, 24, ' Black means: so many');
   axel.text(leftMiddle - 16, 26, ' right color on the right place, ');
   axel.text(leftMiddle - 11, 28, ' White means: so many');
   axel.text(leftMiddle - 16, 30, ' right color on the wrong place. ');
-  axel.fg(255, 0, 0);
-  console.log(live);
   //  axel.fg(255, 255, 255);
 };
 

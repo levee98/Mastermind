@@ -36,7 +36,7 @@ playboard.playBoard(xMiddle);
 instruct.instruct(live, xMiddle);
 
 while (true) {
-//  console.log(genCo);
+  console.log(genCo);
   const inputedCode = inputGuess.guessedCode(howManyDigits, xMiddle);
   const answBlack = rigthNumPlace.proof(genCo, inputedCode);
   const answWhite = proofInclude.proofWhite(genCo, inputedCode);

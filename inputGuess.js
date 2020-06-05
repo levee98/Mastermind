@@ -24,12 +24,12 @@ const guessedCode = (hMD, xMiddle) => {
       } else {
         axel.bg(255, 0, 0);
         axel.text(leftMiddle - 14, 18, 'You give not usable digits!');
-        axel.text(leftMiddle - 12, 19, '4 digit number, please!');
+        axel.text(leftMiddle - 14, 19, '  4 digit number, please!  ');
         //        axel.fg(255, 255, 255);
       }
     } else {
       axel.bg(255, 0, 0);
-      axel.text(leftMiddle - 12, 19, '4 digit number, please!');
+      axel.text(leftMiddle - 14, 19, '  4 digit number, please!  ');
       //      axel.fg(255, 255, 255);
     }
   }
