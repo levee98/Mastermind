@@ -1,10 +1,10 @@
 // separate digits
-const digits = (szam) => {
+const digits = (number) => {
   const num = [];
   for (let i = 3; i >= 0; i--) {
-    const szj = Math.floor(szam % 10);
+    const szj = Math.floor(number % 10);
     num[i] = szj;
-    szam /= 10;
+    number /= 10;
   }
   return num;
 };
