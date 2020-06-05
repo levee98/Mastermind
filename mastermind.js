@@ -48,14 +48,14 @@ while (true) {
   //  console.log(play);
   oneRowDown.oneRowDown();
   if (answBlack === 4) { // You Win!
-    gameOver.win(genCo);
+    gameOver.win(genCo, xMiddle);
     break;
   }
   live--;
   instruct.instruct(live, xMiddle);
 
   if (live < 1) { // You loose
-    gameOver.loose(genCo);
+    gameOver.loose(genCo, xMiddle);
     break;
   }
 }
