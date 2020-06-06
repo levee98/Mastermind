@@ -1,0 +1,14 @@
+{
+  "name": "mastermind",
+  "version": "1.0.0",
+  "description": "",
+  "main": "mastermind.js",
+  "scripts": {
+    "start": "node mastermind.js"
+  },
+  "author": "Tóth Levente",
+  "license": "ISC",
+  "dependencies": {
+    "readline-sync": "^1.4.10"
+  }
+}
